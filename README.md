@@ -6,7 +6,7 @@ This is a PHP project that uses FastRoute for routing and Blade for rendering vi
 * Composer
 * JavaScript
 * Docker and Docker Compose
-* 
+
 ### How to run the project
 1. Ensure Docker and Docker Compose are installed on your machine.  
 2. Clone the repository to your local machine using git clone.  
