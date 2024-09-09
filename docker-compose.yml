@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    image: php:8.0-apache
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 8080:80
+    environment:
+      - APP_ENV=local
+    command: ["apache2-foreground"]
+    entrypoint: /bin/sh -c "a2enmod rewrite && exec $$0 $$@"

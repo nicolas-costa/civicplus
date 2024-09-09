@@ -1,0 +1,4 @@
+.idea
+vendor
+src/Views/cache/*
+# .env should be here, but I will not put it to ease stuff
