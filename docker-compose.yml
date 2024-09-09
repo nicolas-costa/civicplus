@@ -11,3 +11,10 @@ services:
       - APP_ENV=local
     command: ["apache2-foreground"]
     entrypoint: /bin/sh -c "a2enmod rewrite && exec $$0 $$@"
+
+  composer:
+    image: composer:2
+    volumes:
+      - .:/var/www/html
+    working_dir: /var/www/html
+    entrypoint: ["composer", "install"]
